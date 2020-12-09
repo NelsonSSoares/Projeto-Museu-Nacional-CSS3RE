@@ -1,0 +1,61 @@
+/**************************
+/*Estrutura Padrão do Site
+**************************/
+body{
+    background: #f4f2ec url(../images/fundo.png) repeat-x; /* insere cor em hexadecimal e imagem de fundo com url repetindo na horizontal apenas*/
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; /* Padronização da fonte do site em escala de precedencia familiar*/
+
+}
+
+#container{
+    width: 1080px; /* define a largura do container */
+    margin: 0 auto; /*remove margem e deixa por centralizar automaticamente*/
+
+}
+
+a:link, a:actived, a:visited {  /* Aplica formatações nos 3 estados de link*/
+    color: #af670a; /* Define a cor de texto*/
+    text-decoration: none; /* Remove os underlines dos Links*/
+}  
+
+a:hover{ /* aplica formatação nos links quando estiver sobre o cursor*/
+    color: #227115; /* Aplica cor de texto quando estiver sobre o cursor*/
+}
+/********
+LOGO
+/********/
+#logo a{
+    width: 248px; /*define a largura do ID logo*/
+    height: 21px; /* Define a altura do ID logo*/
+    text-indent: -9999px; /*Remove o texto da area de visualização, pois o mesmo só existe por questões de acessibilidade "Leitores de Tela"*/
+    display: block; /* Define o comportamento do container como bloco*/
+    background: url(../images/logo.png) no-repeat; /* Insere o logo no container sem repetir*/
+}
+/*****************
+BARRA DE NAVEGAÇÃO
+*****************/
+header{
+    padding: 15px 0; /* define espaçamento interno*/
+    height: 55px;/* Define a altura*/
+}
+
+nav ul{
+    list-style: none; /* Remove os marcadores da lista*/
+    margin: 20px; /* Espaçamento externo*/
+    float: right; /* Flutua os elementos a direita*/
+}
+
+nav ul li{
+    float: left; /*flutua os elementos a esquerda*/
+}
+
+nav ul li a:link{ /*formata os links dentro desta ordem*/
+    display: block; /* o elemento tem comportamento de bloco*/
+    margin-right: 25px; /*aplica margem a direita*/
+    padding-bottom: 3px; /* espaçamento interno inferior*/
+    text-transform: uppercase;/* Texto em caixa alta*/
+}
+
+nav ul li a:hover{ /*formata os links que estiverem sobre o cursor neste ordem*/
+    border-bottom: 1px solid #535858;/*aplica a borda inferior quando estievr sobre o cursor*/
+}
