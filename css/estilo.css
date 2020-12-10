@@ -13,7 +13,7 @@ body{
 
 }
 
-a:link, a:actived, a:visited {  /* Aplica formatações nos 3 estados de link*/
+a:link, a:active, a:visited {  /* Aplica formatações nos 3 estados de link*/
     color: #af670a; /* Define a cor de texto*/
     text-decoration: none; /* Remove os underlines dos Links*/
 }  
@@ -24,6 +24,10 @@ a:hover{ /* aplica formatação nos links quando estiver sobre o cursor*/
 /********
 LOGO
 /********/
+#logo h1{
+    float: left; /* flutua o logo a esquerda*/
+}
+
 #logo a{
     width: 248px; /*define a largura do ID logo*/
     height: 21px; /* Define a altura do ID logo*/
@@ -58,4 +62,83 @@ nav ul li a:link{ /*formata os links dentro desta ordem*/
 
 nav ul li a:hover{ /*formata os links que estiverem sobre o cursor neste ordem*/
     border-bottom: 1px solid #535858;/*aplica a borda inferior quando estievr sobre o cursor*/
+}
+
+/*************
+PRINCIPAL
+*************/
+
+#conteudo{
+    width: 710px; /*define a largura do container conteudo*/
+    float: left; /* flutua / alinha o container a esquerda*/
+    background: green; /* Define cor de fundo*/
+}
+
+aside{
+    width: 350px; /* define largura do container lateral*/
+    float: right; /* Alinha flutua o container a direita*/
+    background: #ebe7dd; /*define cor de fundo*/
+    padding-bottom: 30px; /* define espaçamento interno inferior*/
+}
+
+section#visita{ /* indica que é a section que possiu o ID visita*/
+    background: #cdc8b1; /*aplica cor de fundo*/
+    padding: 10px 27px 27px 27px; /* define os espaçamento interno laterais e verticais*/
+    margin-top: 10px; /* define espaçamento externo de margem*/
+}
+section#galeria{
+    padding: 0 27px 0 27px;
+}
+
+section#galeria a{
+    display: block; /* transforma o elemento em bloco*/
+    background: url(../images/fundo-foto.png) no-repeat; /* insere imagem de fundo sem repetição*/
+    float: left; /*flutua / alinha os elementos a esquerda*/
+    padding: 17px 15px 17px 15px;  /* define o espaçamento interno para todos os lados começando por cima*/
+    margin: 10px 0 0 10px; /*aplica espaçamento externo de margem*/
+}
+
+section#galeria img{
+    margin-left: 2px; /* define espaçamento externo esquerdo*/
+    margin-top: 3px; /* define espaçamento externo superior*/ 
+}
+
+h4 {
+    color: #86521a; /* aplica cor de texto*/
+    text-transform: uppercase; /* transforma o texto em caixa alta*/
+    padding-bottom:  3px; /* define espaçamento interno inferior*/
+    margin-bottom: 0; /* remove espaçamento externo*/
+}
+
+/***********
+FORMULARIOS
+***********/
+
+input{
+    height: 20px;/* define largura*/
+    width: 80px;/*define altura*/
+    background: #fff;/*aplica cor de fundo*/
+    border: none; /* remove borda*/
+    font-size: 1em; /* define o tamanho da fonte de acordo com ocontaoner pai*/
+}
+
+input.campo{
+    border: 1px solid #ada484; /* aplica borda*/
+}
+
+input.botao{
+    background: #9b9271; /* aplica borda*/
+    color: white; /* define cor de texto*/
+    width: 100%; /*define largura em %*/
+    height: 40px; /* largura em px*/
+    font-size: 1.2em; /* tamanho da fonte de acordo com o tamnho do container pai*/
+    cursor: pointer;
+}
+
+fieldset{
+    border: none; /*remove borda*/
+    
+}
+legend{
+    display: none; /*remove legenda do fieldsetr*/
 }
