@@ -71,7 +71,7 @@ PRINCIPAL
 #conteudo{
     width: 710px; /*define a largura do container conteudo*/
     float: left; /* flutua / alinha o container a esquerda*/
-    background: green; /* Define cor de fundo*/
+    margin-bottom: 20px; /*define espaçamento externo inferior*/
 }
 
 aside{
@@ -79,6 +79,7 @@ aside{
     float: right; /* Alinha flutua o container a direita*/
     background: #ebe7dd; /*define cor de fundo*/
     padding-bottom: 30px; /* define espaçamento interno inferior*/
+    margin-bottom: 20px; /*define o espaçamento externo inferior*/
 }
 
 section#visita{ /* indica que é a section que possiu o ID visita*/
@@ -87,7 +88,7 @@ section#visita{ /* indica que é a section que possiu o ID visita*/
     margin-top: 10px; /* define espaçamento externo de margem*/
 }
 section#galeria{
-    padding: 0 27px 0 27px;
+    padding: 0 27px 0 27px; /*define ordem de expaçamento interno*/
 }
 
 section#galeria a{
@@ -103,11 +104,42 @@ section#galeria img{
     margin-top: 3px; /* define espaçamento externo superior*/ 
 }
 
+article#video{
+    float: left; /*flutua o container a esquerda*/
+    width: 310px; /* define largura*/
+    margin-left: 25px; /*espaçamento externo a esquerda*/
+}
+
+article#mapa{
+    float: left; /*flutua o container a esquerda*/
+    width: 310px; /* define largura*/
+    margin-left: 37px; /*espaçamento externo a esquerda*/
+}
+
+article#exposicoes{
+    float: left; /*flutua o container a esquerda*/
+    width: 310px; /* define largura*/
+    margin:15px 0 0 25px; /* definação de espeçamento externo por todos as dirações começando pela parte superior*/
+}
+
+article#historia{
+    float: left; /*flutua o container a esquerda*/
+    width: 310px; /* define largura*/
+    margin:15px 0 0 37px; /* definação de espeçamento externo por todos as dirações começando pela parte superior*/
+}
+
 h4 {
     color: #86521a; /* aplica cor de texto*/
     text-transform: uppercase; /* transforma o texto em caixa alta*/
     padding-bottom:  3px; /* define espaçamento interno inferior*/
     margin-bottom: 0; /* remove espaçamento externo*/
+}
+
+h3{
+    color: #227115; /* define a cor de texto*/
+    font-size: 1.0em;/* Define o tamanho da fonte de acordo com o tamanho do container pai*/
+    margin-bottom: 15px;/* espaçamento externo inferior*/
+    text-transform: uppercase;/* tranforma todo o texto em caixa alta*/
 }
 
 /***********
@@ -116,10 +148,10 @@ FORMULARIOS
 
 input{
     height: 20px;/* define largura*/
-    width: 80px;/*define altura*/
     background: #fff;/*aplica cor de fundo*/
     border: none; /* remove borda*/
     font-size: 1em; /* define o tamanho da fonte de acordo com ocontaoner pai*/
+    cursor: pointer;
 }
 
 input.campo{
@@ -141,4 +173,15 @@ fieldset{
 }
 legend{
     display: none; /*remove legenda do fieldsetr*/
+}
+/*****
+RODAPÉ
+*****/
+footer{
+    padding: 20px 0 30px 0;  /*define ordem de espaçamento interno*/
+    text-align: center; /* alinha o texto ao centro*/
+    background: url(../images/fundo-rodape.png) no-repeat center top; /* define imagem de fundo sem repetir posicionado no centro no topo*/
+}
+footer>p a {
+    padding: 2px 10px;
 }
